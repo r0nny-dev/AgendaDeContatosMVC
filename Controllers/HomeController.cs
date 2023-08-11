@@ -15,7 +15,10 @@ namespace AgendaDeContatosMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeModel home = new HomeModel();
+            home.Nome = "Ronald Nascimento";
+            home.Email = "rony.nascimento18@gmail.com";
+            return View(home);
         }
 
         public IActionResult Privacy()
